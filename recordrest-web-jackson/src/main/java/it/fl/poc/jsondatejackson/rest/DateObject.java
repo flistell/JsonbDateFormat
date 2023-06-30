@@ -34,9 +34,9 @@ public class DateObject implements Serializable{
     private static final Logger logger = Logger.getLogger(CLASS_NAME);
 
   //@JsonSerialize(as = java.util.Date.class)
-  @JsonSerialize(as = java.util.Date.class)
-  @com.fasterxml.jackson.annotation.JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd-MM-yyyy")  // 2023-06-19 @FL DOES NOT SEEMS TO WORK
-  @JsonbDateFormat(value = "dd/MM/yyyy")  // 2023-06-19 @FL THIS WORKS
+  @com.fasterxml.jackson.databind.annotation.JsonSerialize(as = java.util.Date.class)
+  @com.fasterxml.jackson.annotation.JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")  // 2023-06-19 @FL DOES NOT SEEMS TO WORK
+  @JsonbDateFormat(value = "dd    MM    yyyy")  // 2023-06-19 @FL THIS WORKS
   public java.util.Date getDate() {
         logger.info("@FL getDate() - ENTERING");
         try {
