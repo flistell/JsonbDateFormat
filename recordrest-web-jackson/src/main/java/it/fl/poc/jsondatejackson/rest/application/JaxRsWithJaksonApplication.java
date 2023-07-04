@@ -7,6 +7,8 @@ import javax.ws.rs.ApplicationPath;
 import org.glassfish.jersey.jackson.JacksonFeature;
 import org.glassfish.jersey.message.internal.WriterInterceptorExecutor;
 import org.glassfish.jersey.server.ResourceConfig;
+import org.glassfish.jersey.server.ServerProperties;
+
 import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 
 import it.fl.poc.jsondatejackson.rest.DateDemoService;
@@ -51,10 +53,12 @@ public class JaxRsWithJaksonApplication extends ResourceConfig{
          *    [...]
         */
         
-        register(org.glassfish.jersey.jackson.JacksonFeature.class);  
+        //register(org.glassfish.jersey.jackson.JacksonFeature.class);  
+        register(JacksonFeature.class);
         register(com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider.class);  // NOT ENOUGH TO HAVE @JsonFormat Dates
-        register(DateDemoService.class);
-        
+        //register(DateDemoService.class);
+        property(ServerProperties.METAINF_SERVICES_LOOKUP_DISABLE, true);
+        packages("it.fl.poc.jsondatejackson.rest");
     }
     
 }
