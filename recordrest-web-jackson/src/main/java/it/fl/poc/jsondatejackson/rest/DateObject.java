@@ -12,7 +12,7 @@ public class DateObject implements Serializable{
     private static final long serialVersionUID = 1L;
     
     @JsonSerialize(as = java.util.Date.class)
-    @com.fasterxml.jackson.annotation.JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd-MM-yyyy")  
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd-MM-yyyy")  
     private java.util.Date date;                            // ISO_DATE (or ISO_DATE_TIME if time value specified) 
     private java.util.Calendar calendar;                    // ISO_DATE (or ISO_DATE_TIME if time value specified) 
     private java.util.GregorianCalendar gregorianCalendar;  // ISO_DATE (or ISO_DATE_TIME if time value specified) 
@@ -35,7 +35,7 @@ public class DateObject implements Serializable{
 
   //@JsonSerialize(as = java.util.Date.class)
   @com.fasterxml.jackson.databind.annotation.JsonSerialize(as = java.util.Date.class)
-  @com.fasterxml.jackson.annotation.JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")  // 2023-06-19 @FL DOES NOT SEEMS TO WORK
+  @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")  // 2023-06-19 @FL DOES NOT SEEMS TO WORK
   @JsonbDateFormat(value = "dd    MM    yyyy")  // 2023-06-19 @FL THIS WORKS
   public java.util.Date getDate() {
         logger.info("@FL getDate() - ENTERING");

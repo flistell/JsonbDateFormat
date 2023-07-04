@@ -12,7 +12,7 @@
         <init-param>
             <param-name>jersey.config.server.provider.classnames</param-name>
             <!--param-value>org.glassfish.jersey.jackson.JacksonFeature,com.fasterxml.jackson.annotation.JsonFormat</param-value-->
-            <param-value>org.glassfish.jersey.jackson.JacksonFeature,fasterxml.jackson.annotation.JsonFormat</param-value>
+            <param-value>org.glassfish.jersey.jackson.JacksonFeature,com.fasterxml.jackson.annotation.JsonFormat</param-value>
         </init-param>
         <!-- These parameters seems to be ineffective . 
         --> 
