@@ -7,25 +7,20 @@
         <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
         <init-param>
             <param-name>jersey.config.server.provider.packages</param-name>
-            <param-value>it.fl.poc.jsondatejackson.rest</param-value>
-            <!--param-value>it.fl.poc.jsondatejackson.rest,com.fasterxml.jackson.annotation</param-value-->
+            <!--param-value>it.fl.poc.jsondatejackson.rest</param-value-->
+            <param-value>it.fl.poc.jsondatejackson.rest,com.fasterxml.jackson.annotation</param-value>
         </init-param>
-        <init-param>
-            <param-name>jersey.config.server.disableMoxyJson</param-name>
-            <param-value>true</param-value>
-        </init-param>
-        <load-on-startup>1</load-on-startup>
-        <!--
         <init-param>
             <param-name>jersey.config.server.provider.classnames</param-name>
             <param-value>org.glassfish.jersey.jackson.JacksonFeature,com.fasterxml.jackson.annotation.JsonFormat</param-value>
         </init-param>
+        <!--
         <init-param>
-            <param-name>jersey.config.disableJsonProcessing</param-name>
+            <param-name>jersey.config.server.disableMoxyJson</param-name>
             <param-value>true</param-value>
         </init-param>
         <init-param>
-            <param-name>jersey.config.disableMoxyJson</param-name>
+            <param-name>jersey.config.disableJsonProcessing</param-name>
             <param-value>true</param-value>
         </init-param>
         <init-param>
@@ -36,6 +31,7 @@
             <param-name>config.jsonFeature</param-name>
             <param-value>true</param-value>
         </init-param>
+        <load-on-startup>1</load-on-startup>
         -->
     </servlet>
     <servlet-mapping>
