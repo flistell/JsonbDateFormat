@@ -6,7 +6,4 @@
         <param-name>webapp.encoding.default</param-name>
         <param-value>UTF-8</param-value>
     </application-param>
-    <prefer-application-packages>
-        <package-name>com.fasterxml.jackson.*</package-name>
-    </prefer-application-packages>
 </weblogic-application>
