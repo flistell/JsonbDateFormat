@@ -89,24 +89,3 @@ $ curl -x '' -X GET http://localhost:7001/recordrest-web/resources/record/all
 ```
 
 
-## Reousrces
-
-### WebLogic 
-
-- [What's New in Oracle WebLogic Server](https://docs.oracle.com/en/middleware/standalone/weblogic-server/14.1.1.0/notes/whatsnew.html#GUID-DF8CFD1C-9DD1-423E-ACA6-9717D5738385)
-- [Developing and Securing RESTful Web Services for Oracle WebLogic Server](https://docs.oracle.com/en/middleware/standalone/weblogic-server/14.1.1.0/restf/jersey-back-comp.html#GUID-3219374B-7213-4D1F-A0E9-A6113FF44EB4)
-- [Developing JAX-WS Web Services for Oracle WebLogic Server](https://docs.oracle.com/en/middleware/standalone/weblogic-server/14.1.1.0/wsget/jax-ws-intro.html#GUID-49D730F9-1F69-43DE-980C-7A18FB5285D9)
-- [Upgrading Oracle WebLogic Server](https://docs.oracle.com/en/middleware/standalone/weblogic-server/14.1.1.0/wlupg/upgrade_ws.html#GUID-A9BF7068-B532-4A2D-96D8-6B2B9EFBFD71)
-- [Java API for JSON Processing](https://docs.oracle.com/en/middleware/standalone/weblogic-server/14.1.1.0/wlprg/java-api-for-json-proc.html#GUID-53ED16E0-0669-4698-AAAB-BB0C7B9A977B)
-- [Java API for JSON Binding](https://docs.oracle.com/en/middleware/standalone/weblogic-server/14.1.1.0/wlprg/java-api-json-binding.html#GUID-203F8D60-C2E9-4183-8357-00B8A289E3D9)
-
-### Other
-
-* [FasterXML/jackson-jaxrs-providers: Multi-module project that contains Jackson-based "old" JAX-RS (ones under \`javax.ws.rs\`) providers for JSON, XML, YAML, Smile, CBOR formats](https://github.com/FasterXML/jackson-jaxrs-providers)
-* [rest - Configure Jackson as JSON Provider in JAX-RS 2.0 - Stack Overflow](https://stackoverflow.com/questions/18741954/configure-jackson-as-json-provider-in-jax-rs-2-0)
-* [Using Jackson as JSON provider in Jersey 2.x | cassiomolin](https://cassiomolin.com/2016/08/10/using-jackson-as-json-provider-in-jersey-2x/)
-* [JAX-RS 2.0 behavior changes - IBM Documentation](https://www.ibm.com/docs/en/was-zos/9.0.5?topic=applications-jax-rs-20-behavior-changes)
-* [java - Use Jackson as JAXB-JSON-processor in JavaEE Application - Stack Overflow](https://stackoverflow.com/questions/29698350/use-jackson-as-jaxb-json-processor-in-javaee-application)
-* [java - How to disable Jersey's JacksonJsonProvider auto registration so I use my own? - Stack Overflow](https://stackoverflow.com/questions/23441095/how-to-disable-jerseys-jacksonjsonprovider-auto-registration-so-i-use-my-own)
-
-

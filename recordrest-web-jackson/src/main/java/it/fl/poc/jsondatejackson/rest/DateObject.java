@@ -4,15 +4,14 @@ import java.io.Serializable;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.json.bind.annotation.JsonbDateFormat;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
-public class DateObject implements Serializable{
+public class DateObject implements Serializable {
+    private static final String CLASS_NAME = DateObject.class.getName();
+    private static final Logger logger = Logger.getLogger(CLASS_NAME);
     private static final long serialVersionUID = 1L;
     
-    @JsonSerialize(as = java.util.Date.class)
-    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")  // 2023-06-19 @FL DOES NOT SEEMS TO WORK
     private java.util.Date date;                            // ISO_DATE (or ISO_DATE_TIME if time value specified) 
     private java.util.Calendar calendar;                    // ISO_DATE (or ISO_DATE_TIME if time value specified) 
     private java.util.GregorianCalendar gregorianCalendar;  // ISO_DATE (or ISO_DATE_TIME if time value specified) 
@@ -30,12 +29,7 @@ public class DateObject implements Serializable{
     //private java.time.OffsetDateTime offsetDateTime;        // ISO_OFFSET_DATE_TIME 
     //private java.time.OffsetTime offsetTime;                // ISO_OFFSET_TIME 
 
-    private static final String CLASS_NAME = "it.fl.poc.jsondatejackson.rest.DateObject";
-    private static final Logger logger = Logger.getLogger(CLASS_NAME);
-
-  @JsonSerialize(as = java.util.Date.class)
-  @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")  // 2023-06-19 @FL DOES NOT SEEMS TO WORK
-  //@JsonbDateFormat(value = "dd    MM    yyyy")  // 2023-06-19 @FL THIS WORKS
+  @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")
   public java.util.Date getDate() {
         logger.info("@FL getDate() - ENTERING");
         try {
