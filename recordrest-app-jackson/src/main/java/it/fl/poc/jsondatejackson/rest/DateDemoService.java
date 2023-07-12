@@ -18,7 +18,7 @@ import javax.ws.rs.core.MediaType;
 @Path("/datedemo")
 public class DateDemoService {
   private static final String CLASS_NAME = DateDemoService.class.getName();
-  private static final String APP_NAME = "recordrest-web-jackson";
+  private static final String APP_NAME = "recordrest-app-jackson";
   private static final Logger logger = Logger.getLogger(CLASS_NAME);
 
   @Context
@@ -36,10 +36,10 @@ public class DateDemoService {
     if (context != null) {
       Map<String, Object> configurationProperties = context.getProperties();
       for (String k : configurationProperties.keySet()) {
-        logger.info("@FL " + APP_NAME + " Configuration Property: [" + k + "]=[" + configurationProperties.get(k).toString() + "]");
+        logger.info("@FL " + APP_NAME + "Configuration Property: [" + k + "]=[" + configurationProperties.get(k).toString() + "]");
       }
     } else {
-        logger.info("@FL " + APP_NAME + " Configuration context NULL");
+        logger.info("@FL " + APP_NAME + "Configuration context NULL");
     }
 
     return dateObj;

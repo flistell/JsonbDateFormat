@@ -6,11 +6,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>it.fl.poc</groupId>
-  <artifactId>recordrest-web-jackson</artifactId>
+  <artifactId>recordrest-app-jackson</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>recordrest-web-jackson</name>
+  <name>recordrest-app-jackson</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -74,7 +74,7 @@
       <version>${jersey.version}</version>
       <scope>provided</scope>
     </dependency>
-    
+
   </dependencies>
   
   <build>

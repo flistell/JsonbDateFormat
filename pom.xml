@@ -16,6 +16,7 @@
 
   <modules>
     <module>recordrest-web-jackson</module>
+    <module>recordrest-app-jackson</module>
     <module>ear</module>
   </modules>
 

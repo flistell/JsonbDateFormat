@@ -23,5 +23,12 @@
       <type>war</type>
     </dependency>
 
+    <dependency>
+      <groupId>it.fl.poc</groupId>
+      <artifactId>recordrest-app-jackson</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+
   </dependencies>
 </project>
